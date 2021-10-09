@@ -1,0 +1,22 @@
+{
+  "name": "mc-mod-check-be",
+  "version": "1.0.0",
+  "description": "mc mod cheker backend",
+  "main": "index.js",
+  "author": "delong",
+  "license": "MIT",
+  "dependencies": {
+    "@types/adm-zip": "^0.4.34",
+    "@types/js-yaml": "^4.0.3",
+    "@types/node": "^16.10.3",
+    "adm-zip": "^0.5.9",
+    "js-yaml": "^4.1.0",
+    "toml": "^3.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "ts-node src/test.ts"
+  }
+}
