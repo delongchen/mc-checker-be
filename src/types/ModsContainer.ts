@@ -1,6 +1,5 @@
 import {FabricModRaw} from './FabricMod'
 import {ForgeMod} from './ForgeMod'
-import Zip from 'adm-zip'
 
 type McMod = ForgeMod | FabricModRaw
 
@@ -14,7 +13,7 @@ interface ModParseResult {
   t: ModType
 }
 
-type ModParser = (zip: Zip) => Promise<ModParseResult>
+type ModParser = (file: string) => Promise<ModParseResult>
 
 export {
   McMod,

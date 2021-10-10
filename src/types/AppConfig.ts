@@ -1,5 +1,5 @@
 interface AppConfig {
-  mcDir: string,
+  modsDir: string,
   httpPort: number
 }
 

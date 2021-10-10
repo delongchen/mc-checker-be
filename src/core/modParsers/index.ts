@@ -1,9 +1,9 @@
-import Fabric from './fabric'
+import { FabricModParser } from './fabric'
 import Forge from './forge'
 import { ModParser } from '../../types/ModsContainer'
 
 const parsers: ModParser[] = [
-  Fabric,
+  FabricModParser,
   Forge
 ]
 

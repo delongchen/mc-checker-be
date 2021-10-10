@@ -1,10 +1,11 @@
-import { modsContainer, loadMods } from './core/modsManager'
+import { startHttpServer } from "./app";
+import { loadMods } from "./core/modsManager";
 
 async function start() {
   await loadMods()
-  console.log(modsContainer)
+  await startHttpServer()
 }
 
 start().then(() => {
-  console.log('end')
+  console.log('good')
 })
