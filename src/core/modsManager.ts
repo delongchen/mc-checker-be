@@ -42,7 +42,7 @@ async function loadMods() {
     }
   }
 
-  modsInfosCache = Buffer.from(JSON.stringify(fabricModFileMap))
+  modsInfosCache = Buffer.from(JSON.stringify(modsContainer[ModType.fabric]))
   {
     const modIds = Object.values(fabricModFileMap)
     const zip = new Zip
